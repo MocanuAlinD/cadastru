@@ -1,0 +1,19 @@
+.section{
+    background: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contentContainer{
+    background: darkgreen;
+}
+
+.navMenu{
+    z-index: 2;
+    a{
+        color: white;
+        background: coral;
+        text-decoration: none;
+    }
+}
