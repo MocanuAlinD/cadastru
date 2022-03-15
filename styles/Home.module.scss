@@ -11,9 +11,38 @@
 
 .navMenu{
     z-index: 2;
+    // width: fit-content;
     a{
         color: white;
         background: coral;
         text-decoration: none;
+        width: fit-content;
     }
+    @media screen and (max-width: 768px){
+        // width: 100%;
+    }
+}
+
+.title{
+    height: fit-content;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h4{
+        color: whitesmoke;
+        font-size: min(calc(100vw / 10), 4rem);
+        // background: coral;
+        // width: 100%;
+        text-align: center;
+        font-family: "Fugaz One", sans-serif;
+    }
+    .firstTitle{
+        padding-right: min(30%,10rem);
+    }
+    .secondTitle{
+        padding-left: min(30%, 10rem);
+    }
+
 }
