@@ -3,9 +3,22 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 
 export default function Home() {
+
+  const changeActive = (e) => {
+    const all = document.querySelectorAll(".links")
+    all.forEach(element => {
+      element.classList.remove('active')
+      element.style.background = "none"
+      element.style.borderLeft = "2px solid var(--color-blue-dark)"
+    });
+    e.target.classList.add('active')
+    e.target.style.background = "var(--color-blue-dark)"
+    e.target.style.borderLeft = "2px solid var(--color-orange)"
+  }
+
   return (
     <div
-      className={"container-fluid bg-info m-0 p-0"}
+      className={styles.mainContainer + " container-fluid m-0 p-0"}
       style={{ height: "fit-content", minHeight: "100vh" }}
     >
       <Head>
@@ -14,78 +27,80 @@ export default function Home() {
         <link rel="icon" href="/titleIcon1.png" />
       </Head>
 
-      <div className={styles.title + " row bg-dark m-0 p-0"}>
-        <h4 className={styles.firstTitle}>cadastru</h4>
-        <h4 className={styles.secondTitle}>intabulare</h4>
+      <div className={styles.title + " row m-0 p-0"}>
+        <h4 className={styles.firstTitle}>Cadastru</h4>
+        <h4 className={styles.secondTitle}>Constanta</h4>
       </div>
-
-      {/* <div
-        className={styles.contentContainer + 
-          " border d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center"
-        }
-      > */}
 
       <div
         className={
           styles.contentContainer +
-          " border d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center m-0 p-0 px-2 px-md-5"
+          " d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center m-0 p-0 px-2"
         }
       >
         <div
           className={
             styles.navMenu +
-            " row position-sticky sticky-top border m-0 p-0 d-flex flex-md-column px-md-3 justify-content-between align-items-center col-12 col-md-auto"
+            " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-start align-items-start col-12 col-md-auto"
           }
         >
-          <Link href="#id1">
-            <a className={"m-0 px-0 my-1"}>Preturi</a>
+          <Link href="#prezentare">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Prezentare</a>
           </Link>
-          <Link href="#id2">
-            <a className={"m-0 px-0 my-1"}>Contact</a>
+          <Link href="#cadastru">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Cadastru si intabulare</a>
           </Link>
-          <Link href="#id3">
-            <a className={"m-0 px-0 my-1"}>Section 3</a>
+          <Link href="#topografie">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Topografie</a>
           </Link>
-          <Link href="#id4">
-            <a className={"m-0 px-0 my-1"}>Section 4</a>
+          <Link href="#certificat">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Certificat energetic</a>
+          </Link>
+          <Link href="#preturi">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Preturi</a>
+          </Link>
+          <Link href="#contact">
+            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Contact</a>
           </Link>
         </div>
 
-        {/* <div className={"bg-success border col-12 col-md-7 flex-grow-1 m-0 p-0"}> */}
-        {/* <div
-          className={
-            "bg-success border d-flex flex-column flex-md-grow-1 col-md-auto m-0 p-0"
-          }
-        > */}
-        <div className={"bg-success border col-12 col-md-7 col-xxl-9"}>
+        <div className={"col-12 col-md-7 col-xxl-9"}>
           <section
-            id="id1"
-            className={styles.section + " border border-danger"}
+            id="prezentare"
+            className={styles.section + ""}
+          >
+            <h4>Prezentare</h4>
+          </section>
+          <section
+            id="cadastru"
+            className={styles.section + ""}
+          >
+            <h4>Cadastru</h4>
+          </section>
+          <section
+            id="topografie"
+            className={styles.section + ""}
+          >
+            <h4>Topografie</h4>
+          </section>
+          <section
+            id="certificat"
+            className={styles.section + ""}
+          >
+            <h4>Certificat energetic</h4>
+          </section>
+          <section
+            id="preturi"
+            className={styles.section + ""}
           >
             <h4>Preturi</h4>
           </section>
-          <section
-            id="id2"
-            className={styles.section + " border border-danger"}
-          >
-            <h4>Contact</h4>
-          </section>
-          <section
-            id="id3"
-            className={styles.section + " border border-danger"}
-          >
-            <h4>Section 3</h4>
-          </section>
-          <section
-            id="id4"
-            className={styles.section + " border border-danger"}
-          >
-            <h4>Section 4</h4>
-          </section>
         </div>
 
-        <div className={"bg-secondary border col-12 col-md-auto"}>
-          <h4>Sidebar Right</h4>
+        <div className={"col-12 col-md-auto mb-5"} id="contact">
+          <h3>Contact</h3>
+          <h5>Telefon</h5>
+          <h5>Email</h5>
         </div>
       </div>
     </div>

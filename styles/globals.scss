@@ -6,13 +6,19 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: tomato;
-    scroll-behavior: smooth;
-    // overflow: hidden;
-    // overflow-y: scroll;
-    // overflow-y: scroll;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--color-blue);
+  scroll-behavior: smooth;
+  --color-blue: #0077b6;
+  --color-blue-dark: #023e8a;
+  --color-light: whitesmoke;
+  --color-light1: #ffffffbb;
+  --color-light2: #ffffff33;
+  --color-dark:  #343a40;
+  --color-orange: #e76f51;
+  --transition: all .35s ease-in-out;
+
 }
 
 a {
@@ -20,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-section{
+section {
   height: fit-content;
   min-height: 100vh;
 }

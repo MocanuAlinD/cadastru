@@ -1,25 +1,48 @@
+.mainContainer{
+    background: var(--color-blue);
+}
+
 .section{
-    background: #555;
+    background: var(--color-blue-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    h4{
+        color: var(--color-light);
+        font-family: Poppins, sans-serif;
+        font-weight: 100;
+    }
 }
 .contentContainer{
-    background: darkgreen;
+    // background: darkgreen;
 }
 
 .navMenu{
     z-index: 2;
-    // width: fit-content;
+    background: var(--color-blue);
     a{
-        color: white;
-        background: coral;
+        color: var(--color-light);
         text-decoration: none;
         width: fit-content;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: .8rem;
+        transition: var(--transition);
+        border-left: 3px solid var(--color-blue-dark);
     }
-    @media screen and (max-width: 768px){
-        // width: 100%;
+    a:hover, a:focus, a:active{
+        text-decoration: none;
+    }
+    a:hover{
+        color: var(--color-light);
+        background: var(--color-light2);
+    }
+    a:active{
+        background: var(--color-light2);
+    }
+    a:focus{
+        background: var(--color-light2);
     }
 }
 
@@ -31,12 +54,10 @@
     align-items: center;
     flex-direction: column;
     h4{
-        color: whitesmoke;
         font-size: min(calc(100vw / 10), 4rem);
-        // background: coral;
-        // width: 100%;
         text-align: center;
         font-family: "Fugaz One", sans-serif;
+        color: var(--color-light);
     }
     .firstTitle{
         padding-right: min(30%,10rem);
