@@ -1,0 +1,22 @@
+.navMenu{
+    z-index: 2;
+    background: var(--color-blue);
+    a{
+        color: var(--color-light);
+        text-decoration: none;
+        width: fit-content;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: .8rem;
+        transition: var(--transition);
+        border-bottom: 1px solid var(--color-light);
+        border-radius: .2rem .2rem 0 0;
+    }
+    a:hover, a:focus, a:active{
+        text-decoration: none;
+    }
+    a:hover{
+        color: var(--color-light);
+        background: var(--color-blue-dark);
+    }
+}

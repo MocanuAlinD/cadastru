@@ -1,20 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Link from "next/link";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import EmailIcon from "@mui/icons-material/Email";
+import Prezentare from "../components/Prezentare";
+import Cadastru from "../components/Cadastru";
+import Topografie from "../components/Topografie";
+import Certificat from "../components/Certificat";
+import Preturi from "../components/Preturi";
+import NavMenu from "../components/NavMenu";
+import Contact from "../components/Contact";
 
 export default function Home() {
-  const changeActive = (e) => {
-    const all = document.querySelectorAll(".links");
-    all.forEach((element) => {
-      element.classList.remove("active");
-      element.style.background = "none";
-    });
-    e.target.classList.add("active");
-    e.target.style.background = "var(--color-blue)";
-  };
-
   return (
     <div
       className={styles.mainContainer + " container-fluid m-0 p-0"}
@@ -31,28 +25,7 @@ export default function Home() {
         <h4 className={styles.secondTitle}>Constanta</h4>
       </div>
 
-      <div
-        className={
-          styles.contact +
-          " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
-        }
-        id="contact"
-      >
-        <div className={"d-flex flex-wrap p-1"}>
-          <LocalPhoneIcon
-            className={styles.contactIcon + " d-flex d-sm-none me-3"}
-          />
-          <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3>
-          <h5 className={"me-3"}>0729.927.436</h5>
-        </div>
-        <div className={"d-flex flex-wrap p-1"}>
-          <EmailIcon
-            className={styles.contactIcon + " d-flex d-sm-none me-3"}
-          />
-          <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3>
-          <h5>geo.email@yahoo.com</h5>
-        </div>
-      </div>
+      <Contact />
 
       <div
         className={
@@ -60,121 +33,18 @@ export default function Home() {
           " d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center m-0 p-0 px-2"
         }
       >
+        <NavMenu />
         <div
           className={
-            styles.navMenu +
-            " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 m-md-3 my-2 ps-2 rounded-3"
+            styles.sections +
+            " col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"
           }
         >
-          <Link href="#prezentare">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Prezentare
-            </a>
-          </Link>
-          <Link href="#cadastru">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Cadastru si intabulare
-            </a>
-          </Link>
-          <Link href="#topografie">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Topografie
-            </a>
-          </Link>
-          <Link href="#certificat">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Certificat energetic
-            </a>
-          </Link>
-          <Link href="#preturi">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Preturi
-            </a>
-          </Link>
-          <Link href="#contact">
-            <a
-              className={"links m-0 p-0 mx-1 my-2 px-2"}
-              onClick={(e) => changeActive(e)}
-            >
-              Contact
-            </a>
-          </Link>
-        </div>
-
-        <div
-          className={styles.sections + " col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"}
-        >
-          <section id="prezentare" className={styles.prezentare + " rounded-3"}>
-            <div className={"mb-4"}>
-              <h3>Despre noi</h3>
-              <p>
-                &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
-                apartamente terenuri si constructii in Municipiul Constanta, cat
-                si in judetul Constanta.
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Pe langa serviciile de cadastru si
-                intabulare, executam si lucrari pentru alipirea sau dezmembrarea
-                terenurilor agrare sau curti constructii, precum si
-                identificarea si trasarea limitelor de proprietate.
-                <br />
-                &nbsp;&nbsp; Trasarea sau intarusarea terenului este necesara
-                pentru localizarea si identificarea exacta a limitelor de
-                proprietate. Aceasta operatiune este indicata sa se efectueze in
-                momentul in care se doreste achizitionarea unui teren,
-                oferindu-va siguranta ca terenul indicat este chiar cel din
-                acte. <br />
-                &nbsp;&nbsp;De asemenea va punem la dispozitie informatiile
-                necesare pentru intabularea apartamentelor si terenurilor in
-                cartea funciara, cu ajutorul careia veti putea tranzactiona sau
-                ipoteca imobilele respective.
-              </p>
-            </div>
-            <div className={""}>
-              <h3>Cadastru si intabulare</h3>
-              <p>
-                &nbsp;&nbsp;Expert cadastru autorizat de O.N.C.G.C Constanta,
-                executa documentatii cadastru si intabulare.
-              </p>
-            </div>
-            <div className={""}>
-              <h3>Topografie</h3>
-              <p>
-                &nbsp;&nbsp;Oferim masuratori topografice, masuratori de teren
-                si prelucrari de date.
-              </p>
-            </div>
-          </section>
-          <section id="cadastru" className={styles.cadastru + " rounded-3"}>
-            <h3>Cadastru si intabulare</h3>
-            <div>
-              <h4>Efectuam masuratori</h4>
-              <p>in orasul Constanta si intreg judetul Constanta dar ne putem deplasa si in judetele alaturate pentru anumite lucrari:</p>
-            </div>
-          </section>
-          <section id="topografie" className={styles.topografie + " rounded-3"}>
-            <h4>Topografie</h4>
-          </section>
-          <section id="certificat" className={styles.certificat + " rounded-3"}>
-            <h4>Certificat energetic</h4>
-          </section>
-          <section id="preturi" className={styles.preturi + " rounded-3"}>
-            <h4>Preturi</h4>
-          </section>
+          <Prezentare />
+          <Cadastru />
+          <Topografie />
+          <Certificat />
+          <Preturi />
         </div>
       </div>
     </div>
