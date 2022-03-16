@@ -1,5 +1,5 @@
 .mainContainer{
-    background: var(--color-blue);
+    background: var(--color-light);
 }
 
 .section{
@@ -20,7 +20,7 @@
 
 .navMenu{
     z-index: 2;
-    background: var(--color-blue);
+    background: var(--color-blue-light);
     a{
         color: var(--color-light);
         text-decoration: none;
@@ -53,11 +53,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("/title.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     h4{
         font-size: min(calc(100vw / 10), 4rem);
         text-align: center;
         font-family: "Fugaz One", sans-serif;
         color: var(--color-light);
+        -webkit-text-stroke: 3px var(--color-blue-dark);
     }
     .firstTitle{
         padding-right: min(30%,10rem);
@@ -66,4 +71,37 @@
         padding-left: min(30%, 10rem);
     }
 
+}
+
+.contact{
+    background: var(--color-blue-dark);
+    h3,h5{
+        margin: 0;
+        padding: .5rem 0;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        color: var(--color-light);
+        font-family: Poppins, sans-serif;
+        font-weight: 200;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .contactIcon{
+        font-size: 1.7rem;
+        margin-top: .3rem;
+        height: 100%;
+        color: var(--color-light);
+    }
+    @media screen and (max-width: 375px){
+        h3, h5{
+            font-size: .8rem;
+        }
+    }
 }

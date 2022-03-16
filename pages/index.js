@@ -1,20 +1,21 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function Home() {
-
   const changeActive = (e) => {
-    const all = document.querySelectorAll(".links")
-    all.forEach(element => {
-      element.classList.remove('active')
-      element.style.background = "none"
-      element.style.borderLeft = "2px solid var(--color-blue-dark)"
+    const all = document.querySelectorAll(".links");
+    all.forEach((element) => {
+      element.classList.remove("active");
+      element.style.background = "none";
+      element.style.borderLeft = "2px solid var(--color-blue-dark)";
     });
-    e.target.classList.add('active')
-    e.target.style.background = "var(--color-blue-dark)"
-    e.target.style.borderLeft = "2px solid var(--color-orange)"
-  }
+    e.target.classList.add("active");
+    e.target.style.background = "var(--color-blue-dark)";
+    e.target.style.borderLeft = "2px solid var(--color-orange)";
+  };
 
   return (
     <div
@@ -33,6 +34,25 @@ export default function Home() {
       </div>
 
       <div
+          className={
+            styles.contact +
+            " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
+          }
+          id="contact"
+        >
+          <div className={"d-flex flex-wrap p-1"}>
+            <LocalPhoneIcon className={styles.contactIcon + " d-flex d-sm-none me-3"} />
+            <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3>
+            <h5 className={"me-3"}>0721.999.888</h5>
+          </div>
+          <div className={"d-flex flex-wrap p-1"}>
+            <EmailIcon className={styles.contactIcon + " d-flex d-sm-none me-3"} />
+            <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3>
+            <h5>ionescugeorge@yahoo.com</h5>
+          </div>
+        </div>
+
+      <div
         className={
           styles.contentContainer +
           " d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center m-0 p-0 px-2"
@@ -41,67 +61,78 @@ export default function Home() {
         <div
           className={
             styles.navMenu +
-            " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-start align-items-start col-12 col-md-auto"
+            " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 m-md-3 my-2 ps-2 rounded-3"
           }
         >
           <Link href="#prezentare">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Prezentare</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Prezentare
+            </a>
           </Link>
           <Link href="#cadastru">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Cadastru si intabulare</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Cadastru si intabulare
+            </a>
           </Link>
           <Link href="#topografie">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Topografie</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Topografie
+            </a>
           </Link>
           <Link href="#certificat">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Certificat energetic</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Certificat energetic
+            </a>
           </Link>
           <Link href="#preturi">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Preturi</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Preturi
+            </a>
           </Link>
           <Link href="#contact">
-            <a className={styles.links + " links m-0 ps-2 my-1 pe-2"} onClick={(e)=>changeActive(e)}>Contact</a>
+            <a
+              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              onClick={(e) => changeActive(e)}
+            >
+              Contact
+            </a>
           </Link>
         </div>
 
-        <div className={"col-12 col-md-7 col-xxl-9"}>
-          <section
-            id="prezentare"
-            className={styles.section + ""}
-          >
+        <div className={"col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"}>
+          <section id="prezentare" className={styles.section + " rounded-3"}>
             <h4>Prezentare</h4>
           </section>
-          <section
-            id="cadastru"
-            className={styles.section + ""}
-          >
+          <section id="cadastru" className={styles.section + " rounded-3"}>
             <h4>Cadastru</h4>
           </section>
-          <section
-            id="topografie"
-            className={styles.section + ""}
-          >
+          <section id="topografie" className={styles.section + " rounded-3"}>
             <h4>Topografie</h4>
           </section>
-          <section
-            id="certificat"
-            className={styles.section + ""}
-          >
+          <section id="certificat" className={styles.section + " rounded-3"}>
             <h4>Certificat energetic</h4>
           </section>
-          <section
-            id="preturi"
-            className={styles.section + ""}
-          >
+          <section id="preturi" className={styles.section + " rounded-3"}>
             <h4>Preturi</h4>
           </section>
         </div>
 
-        <div className={"col-12 col-md-auto mb-5"} id="contact">
-          <h3>Contact</h3>
-          <h5>Telefon</h5>
-          <h5>Email</h5>
-        </div>
+       
       </div>
     </div>
   );
