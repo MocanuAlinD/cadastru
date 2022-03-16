@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Home() {
   const changeActive = (e) => {
@@ -10,11 +10,9 @@ export default function Home() {
     all.forEach((element) => {
       element.classList.remove("active");
       element.style.background = "none";
-      element.style.borderLeft = "2px solid var(--color-blue-dark)";
     });
     e.target.classList.add("active");
-    e.target.style.background = "var(--color-blue-dark)";
-    e.target.style.borderLeft = "2px solid var(--color-orange)";
+    e.target.style.background = "var(--color-blue)";
   };
 
   return (
@@ -34,23 +32,27 @@ export default function Home() {
       </div>
 
       <div
-          className={
-            styles.contact +
-            " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
-          }
-          id="contact"
-        >
-          <div className={"d-flex flex-wrap p-1"}>
-            <LocalPhoneIcon className={styles.contactIcon + " d-flex d-sm-none me-3"} />
-            <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3>
-            <h5 className={"me-3"}>0721.999.888</h5>
-          </div>
-          <div className={"d-flex flex-wrap p-1"}>
-            <EmailIcon className={styles.contactIcon + " d-flex d-sm-none me-3"} />
-            <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3>
-            <h5>ionescugeorge@yahoo.com</h5>
-          </div>
+        className={
+          styles.contact +
+          " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
+        }
+        id="contact"
+      >
+        <div className={"d-flex flex-wrap p-1"}>
+          <LocalPhoneIcon
+            className={styles.contactIcon + " d-flex d-sm-none me-3"}
+          />
+          <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3>
+          <h5 className={"me-3"}>0729.927.436</h5>
         </div>
+        <div className={"d-flex flex-wrap p-1"}>
+          <EmailIcon
+            className={styles.contactIcon + " d-flex d-sm-none me-3"}
+          />
+          <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3>
+          <h5>geo.email@yahoo.com</h5>
+        </div>
+      </div>
 
       <div
         className={
@@ -66,7 +68,7 @@ export default function Home() {
         >
           <Link href="#prezentare">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Prezentare
@@ -74,7 +76,7 @@ export default function Home() {
           </Link>
           <Link href="#cadastru">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Cadastru si intabulare
@@ -82,7 +84,7 @@ export default function Home() {
           </Link>
           <Link href="#topografie">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Topografie
@@ -90,7 +92,7 @@ export default function Home() {
           </Link>
           <Link href="#certificat">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Certificat energetic
@@ -98,7 +100,7 @@ export default function Home() {
           </Link>
           <Link href="#preturi">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Preturi
@@ -106,7 +108,7 @@ export default function Home() {
           </Link>
           <Link href="#contact">
             <a
-              className={styles.links + " links m-0 ps-2 my-1 pe-2"}
+              className={"links m-0 p-0 mx-1 my-2 px-2"}
               onClick={(e) => changeActive(e)}
             >
               Contact
@@ -114,25 +116,66 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className={"col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"}>
-          <section id="prezentare" className={styles.section + " rounded-3"}>
-            <h4>Prezentare</h4>
+        <div
+          className={styles.sections + " col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"}
+        >
+          <section id="prezentare" className={styles.prezentare + " rounded-3"}>
+            <div className={"mb-4"}>
+              <h3>Despre noi</h3>
+              <p>
+                &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
+                apartamente terenuri si constructii in Municipiul Constanta, cat
+                si in judetul Constanta.
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;Pe langa serviciile de cadastru si
+                intabulare, executam si lucrari pentru alipirea sau dezmembrarea
+                terenurilor agrare sau curti constructii, precum si
+                identificarea si trasarea limitelor de proprietate.
+                <br />
+                &nbsp;&nbsp; Trasarea sau intarusarea terenului este necesara
+                pentru localizarea si identificarea exacta a limitelor de
+                proprietate. Aceasta operatiune este indicata sa se efectueze in
+                momentul in care se doreste achizitionarea unui teren,
+                oferindu-va siguranta ca terenul indicat este chiar cel din
+                acte. <br />
+                &nbsp;&nbsp;De asemenea va punem la dispozitie informatiile
+                necesare pentru intabularea apartamentelor si terenurilor in
+                cartea funciara, cu ajutorul careia veti putea tranzactiona sau
+                ipoteca imobilele respective.
+              </p>
+            </div>
+            <div className={""}>
+              <h3>Cadastru si intabulare</h3>
+              <p>
+                &nbsp;&nbsp;Expert cadastru autorizat de O.N.C.G.C Constanta,
+                executa documentatii cadastru si intabulare.
+              </p>
+            </div>
+            <div className={""}>
+              <h3>Topografie</h3>
+              <p>
+                &nbsp;&nbsp;Oferim masuratori topografice, masuratori de teren
+                si prelucrari de date.
+              </p>
+            </div>
           </section>
-          <section id="cadastru" className={styles.section + " rounded-3"}>
-            <h4>Cadastru</h4>
+          <section id="cadastru" className={styles.cadastru + " rounded-3"}>
+            <h3>Cadastru si intabulare</h3>
+            <div>
+              <h4>Efectuam masuratori</h4>
+              <p>in orasul Constanta si intreg judetul Constanta dar ne putem deplasa si in judetele alaturate pentru anumite lucrari:</p>
+            </div>
           </section>
-          <section id="topografie" className={styles.section + " rounded-3"}>
+          <section id="topografie" className={styles.topografie + " rounded-3"}>
             <h4>Topografie</h4>
           </section>
-          <section id="certificat" className={styles.section + " rounded-3"}>
+          <section id="certificat" className={styles.certificat + " rounded-3"}>
             <h4>Certificat energetic</h4>
           </section>
-          <section id="preturi" className={styles.section + " rounded-3"}>
+          <section id="preturi" className={styles.preturi + " rounded-3"}>
             <h4>Preturi</h4>
           </section>
         </div>
-
-       
       </div>
     </div>
   );
