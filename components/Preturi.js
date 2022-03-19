@@ -49,7 +49,7 @@ const Preturi = () => {
               <td>750 lei</td>
             </tr>
             <tr className={"table-dark"}>
-              <td colspan="3" className={styles.notaSubsol + " text-center"}>
+              <td colSpan="3" className={styles.notaSubsol + " text-center"}>
                 <sup>*</sup>Preturile NU INCLUD taxele OCPI.
               </td>
             </tr>
