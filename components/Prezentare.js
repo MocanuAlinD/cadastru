@@ -1,9 +1,10 @@
 import React from "react";
+import styles from '../styles/prezentare.module.scss'
 
 const Prezentare = () => {
   return (
-    <section id="prezentare" className={""}>
-      <div className={"mb-4"}>
+    <section id="prezentare" className={"shadow"}>
+      <div className={styles.container}>
         <h3>Despre noi</h3>
         <p>
           &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
@@ -27,14 +28,14 @@ const Prezentare = () => {
           respective.
         </p>
       </div>
-      <div className={""}>
+      <div className={styles.container}>
         <h3>Cadastru si intabulare</h3>
         <p>
           &nbsp;&nbsp;Expert cadastru autorizat de O.N.C.G.C Constanta, executa
           documentatii cadastru si intabulare.
         </p>
       </div>
-      <div className={""}>
+      <div className={styles.container}>
         <h3>Topografie</h3>
         <p>
           &nbsp;&nbsp;Oferim masuratori topografice, masuratori de teren si

@@ -10,12 +10,12 @@ const NavMenu = () => {
           element.style.background = "none";
         });
         e.target.classList.add("active");
-        e.target.style.background = "var(--color-blue-dark)";
+        e.target.style.background = "var(--color-blue)";
       };
   return (
     <div
       className={styles.navMenu + 
-        " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 m-md-3 my-2 ps-2 rounded-3"
+        " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 my-md-2 ps-2 rounded-3 shadow mt-1"
       }
     >
       <Link href="#prezentare">

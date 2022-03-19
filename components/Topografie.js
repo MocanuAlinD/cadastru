@@ -2,7 +2,7 @@ import React from 'react'
 
 const Topografie = () => {
   return (
-    <section id="topografie">Topografie</section>
+    <section id="topografie" className={"shadow"}>Topografie</section>
   )
 }
 

@@ -3,29 +3,38 @@
 }
 
 .sections {
-  color: var(--color-light);
+  color: var(--color-dark);
   font-family: Poppins;
-  div {
-    margin: 0 0.2rem;
-    width: min(100%, 45rem);
-  }
+  // div {
+  //   width: min(100%, 45rem);
+  // }
   h3 {
     font-size: 1.2rem;
     font-weight: 400;
+    // background: coral;
+    text-decoration: underline;
+    width: 100%;
   }
   p {
     font-size: 0.9rem;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: left;
   }
   section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: var(--color-blue);
+    background: var(--color-light);
     margin-top: 1rem;
     padding: 5rem 1rem;
+    ul{
+      li{
+        font-size: .9rem;
+        font-weight: 200;
+      }
+    }
   }
 }
 
