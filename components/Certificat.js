@@ -12,7 +12,7 @@ const Certificat = () => {
         </p>
         <p>
           &nbsp;&nbsp;Astfel pentru a putea vinde sau închiria o locuinta,
-          proprietarul trebuie săa obtina un certificat energetic obligatoriu,
+          proprietarul trebuie sa obtina un certificat energetic obligatoriu,
           care atestă starea apartamentului sau casei sale din punctul de vedere
           al consumului de energie. Acest certificat încadreaza locuinta într-o
           clasă energetica, ceea ce denotă un anumit consum mediu anual de

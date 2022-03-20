@@ -5,17 +5,22 @@ const Preturi = () => {
   return (
     <section id="preturi" className={"shadow"}>
       <div className={styles.container + " m-0 p-0"}>
-        <h3 className={"text-center"}>Preturi</h3>
+        <h3 className={"text-center mb-4"}>Preturi</h3>
         {/* <div className={"row col-12 m-0 p-0 border border-dark "}> */}
         <table className={styles.table + " table table-bordered table-light table-hover table-sm"}>
           <thead>
             <tr>
               {/* <th>#</th> */}
               <th>Serviciu</th>
-              <th>Pret (incepand de la)</th>
+              <th>Pret</th>
             </tr>
           </thead>
           <tbody>
+          <tr>
+              {/* <th scope="row">-</th> */}
+              <td>Consultanta</td>
+              <td>GRATUIT</td>
+            </tr>
             <tr>
               {/* <th scope="row">-</th> */}
               <td>Plan situatie pentru CAEC primarie/gaz/enel</td>

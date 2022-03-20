@@ -5,21 +5,18 @@
 .sections {
   color: var(--color-dark);
   font-family: Poppins;
-  // div {
-  //   width: min(100%, 45rem);
-  // }
   h3 {
     font-size: 1.2rem;
     font-weight: 400;
     // background: coral;
-    text-decoration: underline;
+    // text-decoration: underline;
     width: 100%;
   }
   p {
     font-size: 0.9rem;
     font-weight: 200;
     letter-spacing: 1px;
-    text-align: left;
+    text-align: justify;
   }
   section {
     display: flex;
