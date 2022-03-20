@@ -6,23 +6,27 @@ import styles from "../styles/contact.module.scss";
 const Contact = () => {
   return (
     <div
+      // className={
+      //   styles.contact +
+      //   " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
+      // }
       className={
         styles.contact +
-        " container-fluid m-0 p-0 mx-auto d-flex flex-wrap justify-content-center align-items-center shadow"
+        " row col-12 col-lg-auto m-0 p-0 px-3 order-3 order-lg-3 d-flex justify-content-around flex-lg-column mt-lg-3 me-lg-3 p-2 shadow"
       }
       id="contact"
     >
-      <div className={"d-flex flex-wrap p-1"}>
+      <div className={"d-flex m-0 p-0 align-items-center"}>
         <LocalPhoneIcon
-          className={styles.contactIcon + " d-flex d-sm-none me-3"}
+          className={styles.contactIcon + " me-2"}
         />
-        <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3>
-        <h5 className={"me-3"}>0729.927.436</h5>
+        {/* <h3 className={"mx-2 d-none d-sm-flex"}>Telefon:</h3> */}
+        <h5 className={"me-3"}>0751.595.595</h5>
       </div>
-      <div className={"d-flex flex-wrap p-1"}>
-        <EmailIcon className={styles.contactIcon + " d-flex d-sm-none me-3"} />
-        <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3>
-        <h5>geo.email@yahoo.com</h5>
+      <div className={"d-flex m-0 p-0 align-items-center"}>
+        <EmailIcon className={styles.contactIcon + " me-2"} />
+        {/* <h3 className={"mx-2 d-none d-sm-flex"}>Email:</h3> */}
+        <h5>cartotopo.survey@gmail.com</h5>
       </div>
     </div>
   );

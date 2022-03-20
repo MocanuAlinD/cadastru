@@ -14,9 +14,15 @@ const NavMenu = () => {
       };
   return (
     <div
+      // className={styles.navMenu + 
+      //   " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 my-md-2 ps-2 rounded-3 shadow mt-1"
+      // }
       className={styles.navMenu + 
-        " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto order-1 order-md-1 my-md-2 ps-2 rounded-3 shadow mt-1"
+        " row position-sticky sticky-top m-0 p-0 mt-lg-3 ms-lg-3 d-flex flex-lg-column justify-content-center align-items-start col-12 col-lg-auto ps-2 shadow order-1 order-lg-1"
       }
+      // className={styles.navMenu + 
+      //   " row position-sticky sticky-top m-0 p-0 d-flex flex-md-column justify-content-center align-items-start col-12 col-md-auto my-md-2 ps-2 rounded-3 shadow mt-1"
+      // }
     >
       <Link href="#prezentare">
         <a

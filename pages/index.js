@@ -25,19 +25,18 @@ export default function Home() {
         <h4 className={styles.secondTitle}>Constanta</h4>
       </div>
 
-      <Contact />
-
       <div
         className={
           styles.contentContainer +
-          " d-flex flex-wrap flex-column flex-md-row justify-content-md-between align-items-md-start justify-content-start align-items-center m-0 p-0 px-2"
+          " m-0 p-0 d-flex flex-column flex-lg-row col-12"
         }
+        
       >
         <NavMenu />
         <div
           className={
             styles.sections +
-            " col-12 col-md-8 col-lg-9 order-1 order-md-2 me-md-4 mb-2"
+            " row m-0 p-0 mt-3 col-auto col-lg-6 px-3 mx-lg-auto order-3 order-lg-2"
           }
         >
           <Prezentare />
@@ -46,6 +45,7 @@ export default function Home() {
           <Certificat />
           <Preturi />
         </div>
+        <Contact />
       </div>
     </div>
   );

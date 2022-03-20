@@ -27,10 +27,14 @@
     justify-content: center;
     align-items: center;
     background: var(--color-light);
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 5rem 1rem;
     border: 1px solid var(--color-dark1);
-    border-radius: 1.5rem;
+    border-radius: .5rem;
+    transition: all .35s ease-in-out;
+    &:hover{
+      background: var(--color-cream);
+    }
     // width: fit-content;
     ul{
       li{
