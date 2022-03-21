@@ -1,35 +1,17 @@
 import React from "react";
-import styles from "../styles/prezentare.module.scss";
-import Image from "next/image";
+import styles from "../styles/sections.module.scss";
 import Link from "next/link";
 
 const Prezentare = () => {
   return (
-    <section id="prezentare" className={"shadow"}>
+    <section id="prezentare">
       <div className={styles.container}>
         <h3 className={"mb-4"}>Despre noi</h3>
         <div className={styles.imageContainer}>
           <img className={styles.image} src="/gps.jpg" alt="Prezentare" />
-          <p>
-            &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
-            apartamente terenuri si constructii in Municipiul Constanta, cat si
+          <p className="clearfix">
+            &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul Constanta, cat si
             in judetul Constanta.
-            <br />
-            &nbsp;&nbsp;Pe langa serviciile de cadastru si intabulare, executam
-            si lucrari pentru alipirea sau dezmembrarea terenurilor agrare sau
-            curti constructii, precum si identificarea si trasarea limitelor de
-            proprietate.
-            <br />
-            &nbsp;&nbsp;Trasarea sau intarusarea terenului este necesara pentru
-            localizarea si identificarea exacta a limitelor de proprietate.
-            Aceasta operatiune este indicata sa se efectueze in momentul in care
-            se doreste achizitionarea unui teren, oferindu-va siguranta ca
-            terenul indicat este chiar cel din acte.
-            <br />
-            &nbsp;&nbsp;De asemenea va punem la dispozitie informatiile necesare
-            pentru intabularea apartamentelor si terenurilor in cartea funciara,
-            cu ajutorul careia veti putea tranzactiona sau ipoteca imobilele
-            respective.
           </p>
         </div>
         <h3>Ce va oferim:</h3>
@@ -39,7 +21,8 @@ const Prezentare = () => {
           <li>Trasare / tarusare teren intravilan</li>
           <li>Trasare / tarusare teren extravilan</li>
           <li>
-            Trasari de santier (axe constructii, cota &quot;0&quot;) conform proiect
+            Trasari de santier (axe constructii, cota &quot;0&quot;) conform
+            proiect
           </li>
           <li>Aviz OCPI pentru autorizatii construire</li>
           <li>Cadastru si intabulare terenuri</li>
@@ -55,7 +38,7 @@ const Prezentare = () => {
         <h6>
           Vezi
           <Link href="#preturi">
-            <a>aici</a>
+            <a> aici </a>
           </Link>
           lista de preturi
         </h6>

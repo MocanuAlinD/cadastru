@@ -1,20 +1,21 @@
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/navmenu.module.scss"
+import styles from "../styles/navmenu.module.scss";
 
 const NavMenu = () => {
-    const changeActive = (e) => {
-        const all = document.querySelectorAll(".links");
-        all.forEach((element) => {
-          element.classList.remove("active");
-          element.style.background = "none";
-        });
-        e.target.classList.add("active");
-        e.target.style.background = "var(--color-blue)";
-      };
+  const changeActive = (e) => {
+    const all = document.querySelectorAll(".links");
+    all.forEach((element) => {
+      element.classList.remove("active");
+      element.style.background = "none";
+    });
+    e.target.classList.add("active");
+    e.target.style.background = "var(--color-blue)";
+  };
   return (
     <div
-      className={styles.navMenu + 
+      className={
+        styles.navMenu +
         " row position-sticky sticky-top m-0 p-0 mt-lg-3 ms-lg-3 d-flex flex-lg-column justify-content-center align-items-start col-12 col-lg-auto ps-2 shadow order-1 order-lg-1"
       }
     >
@@ -34,22 +35,6 @@ const NavMenu = () => {
           Tipuri de lucrari
         </a>
       </Link>
-      {/* <Link href="#topografie">
-        <a
-          className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
-        >
-          Topografie
-        </a>
-      </Link> */}
-      {/* <Link href="#certificat">
-        <a
-          className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
-        >
-          Certificat energetic
-        </a>
-      </Link> */}
       <Link href="#preturi">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}

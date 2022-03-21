@@ -1,0 +1,70 @@
+.container {
+  // background: green;
+  border-bottom: 1px solid var(--color-dark);
+  padding: 0 3rem;
+  padding-bottom: 5rem;
+  width: min(100%, 60rem);
+  .imageContainer {
+    img {
+      width: 50%;
+      height: auto;
+      float: left;
+      margin: 0 1rem;
+    }
+    
+    @media screen and (max-width: 991px) {
+      img {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      img {
+        padding-bottom: 1rem;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .table {
+    color: var(--color-dark);
+    thead tr th {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    td {
+      font-size: 0.85rem;
+      font-weight: 200;
+    }
+    tr {
+      cursor: pointer;
+    }
+    .notaSubsol {
+      font-weight: 400;
+    }
+  }
+
+  ul {
+    li {
+      font-size: .9rem;
+      font-weight: 200;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  @media screen and (max-width: 991px){
+    padding: 0 0;
+    padding-bottom: 1rem;
+  }
+}

@@ -1,12 +1,16 @@
 import React from "react";
-import styles from "../styles/lucrari.module.scss";
+import styles from "../styles/sections.module.scss";
 
 const Lucrari = () => {
   return (
-    <section id="cadastru" className="shadow">
+    <section id="cadastru">
       <div className={styles.container}>
         <h3 className={"mb-4"}>Tipuri de lucrari executate</h3>
-        <div className={styles.imageContainer + ""}>
+        <div
+          className={
+            styles.imageContainer + " border-start border-dark mb-5 ps-2"
+          }
+        >
           <img src="/constantaWide.png" alt="tipuri de lucrari" />
           <p className={"clearfix"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
@@ -15,8 +19,13 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div className={"border-start border-dark mb-5 ps-2"}>
-          <p>
+        <div
+          className={
+            styles.imageContainer + " border-start border-dark mb-5 ps-2"
+          }
+        >
+          <img src="/img1.jpg" alt="img1" style={{ float: "right" }} />
+          <p className={"clearfix"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
             obtinerea numarului cadastral si inscrierea corpurilor de
             proprietate in Cartea Funciara (apartamente, vile, spatii
@@ -24,30 +33,33 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div className={"border-start border-dark mb-5 ps-2"}>
-          <p>
+        <div
+          className={
+            styles.imageContainer + " border-start border-dark mb-5 ps-2"
+          }
+        >
+          <img src="/img1.jpg" alt="img1" />
+          <p className={"clearfix"}>
             &nbsp;&nbsp;
             <b>
               Dezmembrari, alipiri, comasari, parcelari,intabulari constructii
               si terenuri, documentatii
             </b>
-            pentru descrierea dezmembramintelor (uz, uzufruct, superficie,
+            &nbsp;pentru descrierea dezmembramintelor (uz, uzufruct, superficie,
             servitute si abitatie) dreptului de proprietate.
-          </p>
-          <p>
-            &nbsp;&nbsp;Lucrarile topografice sunt execuatate in conformitate cu
-            legislatia in vigoare si respectand normele emise de Agentia
-            Nationala de Cadastru si Publicitate Imobiliara.
           </p>
         </div>
 
-        <div className={"border-start border-dark mb-5 ps-2"}>
-          <p>
+        <div
+          className={
+            styles.imageContainer + " border-start border-dark mb-5 ps-2"
+          }
+        >
+          <img src="/img1.jpg" alt="img1" style={{ float: "right" }} />
+          <p className={"clearfix"}>
             &nbsp;&nbsp;<b>Certificat energetic.</b> Un audit energetic al unei
             cladiri reprezintă o analiză ce are rolul de a identifica
-            caracteristicile termice ale constructiei.
-          </p>
-          <p>
+            caracteristicile termice ale constructiei. <br />
             &nbsp;&nbsp;Astfel pentru a putea vinde sau închiria o locuinta,
             proprietarul trebuie sa obtina un certificat energetic obligatoriu,
             care atestă starea apartamentului sau casei sale din punctul de
@@ -55,21 +67,17 @@ const Lucrari = () => {
             locuinta într-o clasă energetica, ceea ce denotă un anumit consum
             mediu anual de energie.
           </p>
-          <p>Documente necesare pentru certificatul energetic:</p>
-          <p>
-            &nbsp;&nbsp;Pentru realizarea unui audit energetic si obtinerea unui
-            certificat energetic pentru o locuinta sunt necesare copii ale
-            urmatoarelor documente din cadastru:
+        </div>
+        <div
+          className={
+            styles.imageContainer + " border-start border-dark mb-5 ps-2"
+          }
+        >
+          <img src="/volume.png" alt="volume" />
+          <p className={"clearfix"}>
+            &nbsp;&nbsp;<b>Calcule volum</b> materiale sau zone excavate /
+            exploatate.
           </p>
-          <ul>
-            <li>Releveul apartamentului sau al casei (scara 1:100).</li>
-            <li>Plan de incadrare in zona (scara 1:500).</li>
-            <li>Anul construirii locuintei.</li>
-            <li>
-              O lista a imbunatatirilor efectuate (ex: reabilitare termica,
-              calorifere, centrala termica, geamuri termoizolante, etc).
-            </li>
-          </ul>
         </div>
       </div>
     </section>

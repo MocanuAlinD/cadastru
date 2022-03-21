@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "../styles/preturi.module.scss";
+import styles from "../styles/sections.module.scss";
 
 const Preturi = () => {
   return (
-    <section id="preturi" className={"shadow"}>
-      <div className={styles.container + " m-0 p-0"}>
+    <section id="preturi">
+      <div className={styles.container}>
         <h3 className={"text-center mb-4"}>Preturi</h3>
-        {/* <div className={"row col-12 m-0 p-0 border border-dark "}> */}
         <table className={styles.table + " table table-bordered table-light table-hover table-sm"}>
           <thead>
             <tr>
@@ -54,13 +53,12 @@ const Preturi = () => {
               <td>750 lei</td>
             </tr>
             <tr className={"table-dark"}>
-              <td colSpan="3" className={styles.notaSubsol + " text-center"}>
+              <td colSpan="2" className={styles.notaSubsol + " text-center"}>
                 <sup>*</sup>Preturile NU INCLUD taxele OCPI.
               </td>
             </tr>
           </tbody>
         </table>
-        {/* </div> */}
       </div>
     </section>
   );
