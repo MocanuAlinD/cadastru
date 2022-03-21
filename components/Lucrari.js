@@ -7,7 +7,7 @@ const Lucrari = () => {
       <div className={styles.container}>
         <h3 className={"mb-4"}>Tipuri de lucrari executate</h3>
         <div className={styles.imageContainer + ""}>
-          <img src="/constantaWide.png" />
+          <img src="/constantaWide.png" alt="tipuri de lucrari" />
           <p className={"clearfix"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
             judetul Constanta dar ne putem deplasa si in judetele alaturate
@@ -30,7 +30,7 @@ const Lucrari = () => {
             <b>
               Dezmembrari, alipiri, comasari, parcelari,intabulari constructii
               si terenuri, documentatii
-            </b>{" "}
+            </b>
             pentru descrierea dezmembramintelor (uz, uzufruct, superficie,
             servitute si abitatie) dreptului de proprietate.
           </p>

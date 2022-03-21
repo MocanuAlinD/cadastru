@@ -9,8 +9,8 @@ const Prezentare = () => {
       <div className={styles.container}>
         <h3 className={"mb-4"}>Despre noi</h3>
         <div className={styles.imageContainer}>
-          <img className={styles.image} src="/gps.jpg" />
-          <p style={{}}>
+          <img className={styles.image} src="/gps.jpg" alt="Prezentare" />
+          <p>
             &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
             apartamente terenuri si constructii in Municipiul Constanta, cat si
             in judetul Constanta.
@@ -39,7 +39,7 @@ const Prezentare = () => {
           <li>Trasare / tarusare teren intravilan</li>
           <li>Trasare / tarusare teren extravilan</li>
           <li>
-            Trasari de santier (axe constructii, cota "0") conform proiect
+            Trasari de santier (axe constructii, cota &quot;0&quot;) conform proiect
           </li>
           <li>Aviz OCPI pentru autorizatii construire</li>
           <li>Cadastru si intabulare terenuri</li>
@@ -52,9 +52,13 @@ const Prezentare = () => {
           <li>Aerofotogrametrie</li>
           <li>Calcule volum materiale sau zone excavate/exploatate</li>
         </ul>
-        <h6>Vezi <Link href="#preturi">
+        <h6>
+          Vezi
+          <Link href="#preturi">
             <a>aici</a>
-          </Link> lista de preturi</h6>
+          </Link>
+          lista de preturi
+        </h6>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const Contact = () => {
       id="contact"
     >
       <h4 className={styles.contactTitle}>Contact</h4>
-      <div className={""}>
+      <div>
         <Link href="tel: 0751595595">
           <a>
             <LocalPhoneIcon className={styles.contactIcon + " me-2"} />
