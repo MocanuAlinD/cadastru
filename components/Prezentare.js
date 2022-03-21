@@ -1,17 +1,15 @@
 import React from "react";
 import styles from "../styles/prezentare.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const Prezentare = () => {
   return (
     <section id="prezentare" className={"shadow"}>
       <div className={styles.container}>
-        <h3>Despre noi</h3>
+        <h3 className={"mb-4"}>Despre noi</h3>
         <div className={styles.imageContainer}>
-          <img
-            className={styles.image}
-            src="/gps.jpg"
-          />
+          <img className={styles.image} src="/gps.jpg" />
           <p style={{}}>
             &nbsp;&nbsp;Va oferim servicii de cadastru si intabulare pentru
             apartamente terenuri si constructii in Municipiul Constanta, cat si
@@ -34,20 +32,29 @@ const Prezentare = () => {
             respective.
           </p>
         </div>
-      </div>
-      <div className={styles.container}>
-        <h3>Cadastru si intabulare</h3>
-        <p>
-          &nbsp;&nbsp;Expert cadastru autorizat de O.N.C.G.C Constanta, executa
-          documentatii cadastru si intabulare.
-        </p>
-      </div>
-      <div className={styles.container}>
-        <h3>Topografie</h3>
-        <p>
-          &nbsp;&nbsp;Oferim masuratori topografice, masuratori de teren si
-          prelucrari de date.
-        </p>
+        <h3>Ce va oferim:</h3>
+        <ul>
+          <li>Consultanta gratuita</li>
+          <li>Plan de situatie pentru CAEC primarie/gaz/enel</li>
+          <li>Trasare / tarusare teren intravilan</li>
+          <li>Trasare / tarusare teren extravilan</li>
+          <li>
+            Trasari de santier (axe constructii, cota "0") conform proiect
+          </li>
+          <li>Aviz OCPI pentru autorizatii construire</li>
+          <li>Cadastru si intabulare terenuri</li>
+          <li>Cadastru si intabulare apartamente</li>
+          <li>Actualizari</li>
+          <li>Dezmembrari</li>
+          <li>Alipiri</li>
+          <li>Apartamentari</li>
+          <li>Certificat energetic</li>
+          <li>Aerofotogrametrie</li>
+          <li>Calcule volum materiale sau zone excavate/exploatate</li>
+        </ul>
+        <h6>Vezi <Link href="#preturi">
+            <a>aici</a>
+          </Link> lista de preturi</h6>
       </div>
     </section>
   );

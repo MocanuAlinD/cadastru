@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Prezentare from "../components/Prezentare";
-import Cadastru from "../components/Cadastru";
+import Lucrari from "../components/Lucrari";
 import Topografie from "../components/Topografie";
 import Certificat from "../components/Certificat";
 import Preturi from "../components/Preturi";
@@ -40,9 +40,9 @@ export default function Home() {
           }
         >
           <Prezentare />
-          <Cadastru />
-          <Topografie />
-          <Certificat />
+          <Lucrari />
+          {/* <Topografie /> */}
+          {/* <Certificat /> */}
           <Preturi />
         </div>
         <Contact />

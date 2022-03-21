@@ -10,11 +10,12 @@ const Contact = () => {
     <div
       className={
         styles.contact +
-        " row col-12 col-lg-auto m-0 p-0 px-3 order-3 order-lg-3 d-flex justify-content-around flex-lg-column mt-lg-3 me-lg-3 p-2 shadow"
+        " row col-12 col-lg-auto m-0 p-0 mt-lg-3 me-lg-3 py-2 px-3 order-3 order-lg-3 d-flex justify-content-around flex-column shadow"
       }
       id="contact"
     >
-      <div className={"d-flex align-items-center"}>
+      <h4 className={styles.contactTitle}>Contact</h4>
+      <div className={""}>
         <Link href="tel: 0751595595">
           <a>
             <LocalPhoneIcon className={styles.contactIcon + " me-2"} />
@@ -22,7 +23,7 @@ const Contact = () => {
         </Link>
         <h5 className={"me-3"}>0751.595.595</h5>
       </div>
-      <div className={"d-flex align-items-center"}>
+      <div className={""}>
         <Link href="mailto: cartotopo.survey@gmail.com?subject=Doresc mai multe detalii.">
           <a>
             <EmailIcon url="https://google.com" className={styles.contactIcon + " me-2"} />
@@ -30,7 +31,7 @@ const Contact = () => {
         </Link>
         <h5>cartotopo.survey@gmail.com</h5>
       </div>
-      <div className={"facebook d-flex align-items-center"}>
+      <div className={""}>
         <Link href="">
           <a>
             <FacebookIcon url='https://facebook.com' className={styles.contactIcon + " me-2"} />

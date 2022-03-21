@@ -31,25 +31,25 @@ const NavMenu = () => {
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Cadastru si intabulare
+          Tipuri de lucrari
         </a>
       </Link>
-      <Link href="#topografie">
+      {/* <Link href="#topografie">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
           Topografie
         </a>
-      </Link>
-      <Link href="#certificat">
+      </Link> */}
+      {/* <Link href="#certificat">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
           Certificat energetic
         </a>
-      </Link>
+      </Link> */}
       <Link href="#preturi">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
