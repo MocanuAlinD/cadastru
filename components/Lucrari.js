@@ -14,7 +14,7 @@ const Lucrari = () => {
           <img
             src="/constantaWide.png"
             alt="tipuri de lucrari"
-            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
@@ -29,9 +29,9 @@ const Lucrari = () => {
           }
         >
           <img
-            src="/img1.jpg"
+            src="/cadastru.jpeg"
             alt="img1"
-            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
@@ -49,7 +49,7 @@ const Lucrari = () => {
           <img
             src="/img1.jpg"
             alt="img1"
-            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;
@@ -70,7 +70,7 @@ const Lucrari = () => {
           <img
             src="/certificatEnergetic.jpeg"
             alt="certificat energetic"
-            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Certificat energetic.</b> Un audit energetic al unei
@@ -84,6 +84,7 @@ const Lucrari = () => {
             mediu anual de energie.
           </p>
         </div>
+
         <div
           className={
             "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
@@ -92,11 +93,26 @@ const Lucrari = () => {
           <img
             src="/volume.png"
             alt="volume"
-            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Calcule volum</b> materiale sau zone excavate /
             exploatate.
+          </p>
+        </div>
+
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+          }
+        >
+          <img
+            src="/aerofotogrametrie.jpeg"
+            alt="aerofotogrammetrie"
+            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
+          />
+          <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
+            &nbsp;&nbsp;<b>Aerofotogrammetria</b> (cunoscută și sub denumirea de fotogrammetrie aeriană) este știința care se ocupă cu determinarea în timp și spațiu a obiectelor fixe, mobile sau deformabile și cu reprezentarea lor fotografică, grafică sau numerică (prin coordonate) pe bază de fotografii speciale numite fotograme realizate din aer (cu ajutorul sateliților, avioanelor, drone, e.t.c.).
           </p>
         </div>
       </div>

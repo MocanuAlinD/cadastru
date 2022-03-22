@@ -32,7 +32,7 @@ const Prezentare = () => {
           <li>Alipiri</li>
           <li>Apartamentari</li>
           <li>Certificat energetic</li>
-          <li>Aerofotogrametrie</li>
+          <li>Aerofotogrammetrie</li>
           <li>Calcule volum materiale sau zone excavate/exploatate</li>
         </ul>
         <h6>

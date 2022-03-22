@@ -15,6 +15,7 @@ const Contact = () => {
       id="contact"
     >
       <h4 className={styles.contactTitle}>Contact</h4>
+      {/* <p>orar luni vineri ora start ora sfarsit adresa?</p> */}
       <div>
         <Link href="tel: 0751595595">
           <a>

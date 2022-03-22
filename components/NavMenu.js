@@ -24,7 +24,7 @@ const NavMenu = () => {
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Prezentare
+          Info
         </a>
       </Link>
       <Link href="#cadastru">
@@ -32,7 +32,7 @@ const NavMenu = () => {
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Tipuri de lucrari
+          Servicii
         </a>
       </Link>
       <Link href="#preturi">
@@ -41,6 +41,14 @@ const NavMenu = () => {
           onClick={(e) => changeActive(e)}
         >
           Preturi
+        </a>
+      </Link>
+      <Link href="/intrebari">
+        <a
+          className={"links m-0 p-0 mx-1 my-2 px-2"}
+          onClick={(e) => changeActive(e)}
+        >
+          Intrebari
         </a>
       </Link>
       <Link href="#contact">
