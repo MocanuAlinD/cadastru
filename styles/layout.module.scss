@@ -1,6 +1,12 @@
 .layout {
-  background: var(--color-light);
-  height: 100vh;
+  background: var(--color-cream);
+  height: fit-content;
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+  .children{
+    background: var(--color-light);
+    border-radius: 1rem;
+  }
  
   .title {
     align-items: center;

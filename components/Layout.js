@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <div
         className={
           styles.children +
-          " flex-grow-1 border mx-auto col-12 col-md-9 col-lg-8 col-xl-7 col-xxl-6"
+          " flex-grow-1 my-5 p-1 p-md-2 mx-auto col-11 col-md-10 col-lg-8 col-xl-7 col-xxl-6 shadow"
         }
         style={{}}
       >

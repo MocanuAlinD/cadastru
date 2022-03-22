@@ -2,6 +2,7 @@ import React from "react";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import styles from "../styles/contact.module.scss";
 import Link from "next/link";
 
@@ -11,11 +12,14 @@ const Contact = () => {
       className={styles.container + " row col-12 m-0 p-0 py-3 d-flex flex-column justify-content-center"}
       id="contact"
     >
-      <h4 className={styles.contactTitle + " text-center p-0 m-0 pb-3 mb-3"}>
+      <h4 className={styles.contactTitle + " text-center m-0 p-0 w-auto mx-auto px-5 py-1 mb-3 d-flex justify-content-center flex-column "}>
         Contact
       </h4>
-      {/* <p>orar luni vineri ora start ora sfarsit adresa?</p> */}
-      <div className="">
+      <div>
+        <AccessTimeIcon className={styles.contactIcon + " me-2"} />
+        <h5>Luni - Vineri &nbsp;&nbsp; 8.00 - 16.00</h5>
+      </div>
+      <div>
         <Link href="tel: 0751595595">
           <a>
             <LocalPhoneIcon className={styles.contactIcon + " me-2"} />
@@ -23,7 +27,7 @@ const Contact = () => {
         </Link>
         <h5 className={"me-3"}>0751.595.595</h5>
       </div>
-      <div className="">
+      <div>
         <Link href="mailto: cartotopo.survey@gmail.com?subject=Doresc mai multe detalii.">
           <a>
             <EmailIcon
@@ -34,7 +38,7 @@ const Contact = () => {
         </Link>
         <h5>cartotopo.survey@gmail.com</h5>
       </div>
-      <div className="">
+      <div>
         <Link href="">
           <a>
             <FacebookIcon

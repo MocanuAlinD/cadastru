@@ -1,11 +1,10 @@
 import React from "react";
-// import styles from "../styles/sections.module.scss";
+import styles from "../styles/lucrari.module.scss";
 
 const Lucrari = () => {
   return (
-    <section className="m-0 p-0">
-      <div className={" m-0 p-0 mx-auto px-2 px-md-0 mt-5"}>
-        {/* <h3 className={"my-4 text-center"}>Tipuri de lucrari executate</h3> */}
+      <div className={styles.lucrari + ""}>
+        <h3 className={"my-4 text-center"}>Tipuri de lucrari executate</h3>
         <div
           className={
             "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row bg-dark bg-opacity-10"
@@ -116,7 +115,6 @@ const Lucrari = () => {
           </p>
         </div>
       </div>
-    </section>
   );
 };
 
