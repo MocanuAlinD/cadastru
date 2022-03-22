@@ -5,7 +5,7 @@ const Lucrari = () => {
   return (
     <section id="cadastru">
       <div className={styles.container}>
-        <h3 className={"mb-4"}>Tipuri de lucrari executate</h3>
+        <h3 className={"mb-4 text-center"}>Tipuri de lucrari executate</h3>
         <div
           className={
             "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
