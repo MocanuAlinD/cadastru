@@ -18,7 +18,7 @@ const Prezentare = () => {
         </p>
       </div>
       <h3 className="ps-2">Ce va oferim:</h3>
-      <ul className=" m-0 p-0 px-5 mb-3">
+      <ul className=" m-0 p-0 ms-4 px-1 mb-4">
         <li>Consultanta gratuita</li>
         <li>Plan de situatie pentru CAEC primarie/gaz/enel</li>
         <li>Trasare / tarusare teren intravilan</li>
