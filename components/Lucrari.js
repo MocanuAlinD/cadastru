@@ -14,7 +14,7 @@ const Lucrari = () => {
           <img
             src="/constantaWide.png"
             alt="tipuri de lucrari"
-            className={"m-0 p-0 col-12 col-lg-6"}
+            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
@@ -31,7 +31,7 @@ const Lucrari = () => {
           <img
             src="/img1.jpg"
             alt="img1"
-            className={"m-0 p-0 col-12 col-lg-6"}
+            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
@@ -49,7 +49,7 @@ const Lucrari = () => {
           <img
             src="/img1.jpg"
             alt="img1"
-            className={"m-0 p-0 col-12 col-lg-6"}
+            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;
@@ -70,7 +70,7 @@ const Lucrari = () => {
           <img
             src="/certificatEnergetic.jpeg"
             alt="certificat energetic"
-            className={"m-0 p-0 col-12 col-lg-6"}
+            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Certificat energetic.</b> Un audit energetic al unei
@@ -92,7 +92,7 @@ const Lucrari = () => {
           <img
             src="/volume.png"
             alt="volume"
-            className={"m-0 p-0 col-12 col-lg-6"}
+            className={"m-0 p-0 col-12 col-lg-6 p-1 p-lg-0"}
           />
           <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Calcule volum</b> materiale sau zone excavate /
