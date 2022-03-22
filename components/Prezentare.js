@@ -4,12 +4,11 @@ import Link from "next/link";
 
 const Prezentare = () => {
   return (
-    <div className={styles.prezentare}>
-      <div className={"row mx-auto bg-info"}>
+      <div className={"row mx-auto"}>
         <h3 className={""}>Despre noi</h3>
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row mb-4"
+            "row border d-flex justify-content-center align-items-center flex-row mb-4"
           }
         >
           <img
@@ -51,7 +50,6 @@ const Prezentare = () => {
           lista de preturi
         </h6>
       </div>
-    </div>
   );
 };
 

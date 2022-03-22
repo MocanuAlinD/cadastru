@@ -14,8 +14,6 @@ const Layout = ({ children }) => {
         <h4 className={styles.firstTitle}>Cadastru</h4>
         <h4 className={styles.secondTitle}>Constanta</h4>
       </div>
-      {/* <div className={" m-0 p-0 d-flex flex-column col-12"}> */}
-      {/* <div className={styles.test + " m-0 p-0"}> */}
       <NavMenu />
       <div
         className={
@@ -26,7 +24,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </div>
-      {/* <Contact /> */}
+      <Contact />
       {/* </div> */}
     </div>
   );
