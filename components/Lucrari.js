@@ -1,20 +1,20 @@
 import React from "react";
-import styles from "../styles/sections.module.scss";
+// import styles from "../styles/sections.module.scss";
 
 const Lucrari = () => {
   return (
-    <section id="cadastru">
-      <div className={styles.container}>
-        <h3 className={"mb-4 text-center fs-3"}>Tipuri de lucrari executate</h3>
+    <section className="m-0 p-0">
+      <div className={" m-0 p-0 mx-auto px-2 px-md-0 mt-5"}>
+        {/* <h3 className={"my-4 text-center"}>Tipuri de lucrari executate</h3> */}
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row bg-dark bg-opacity-10"
           }
         >
           <img
             src="/constantaWide.png"
             alt="tipuri de lucrari"
-            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
@@ -25,13 +25,13 @@ const Lucrari = () => {
 
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row-reverse bg-dark bg-opacity-10"
           }
         >
           <img
             src="/cadastru.jpeg"
             alt="img1"
-            className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
+            className={"m-0 p-0 col-8 col-lg-6"}
           />
           <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
@@ -43,7 +43,7 @@ const Lucrari = () => {
 
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row bg-dark bg-opacity-10"
           }
         >
           <img
@@ -64,7 +64,7 @@ const Lucrari = () => {
 
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row-reverse bg-dark bg-opacity-10"
           }
         >
           <img
@@ -87,7 +87,7 @@ const Lucrari = () => {
 
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row bg-dark bg-opacity-10"
           }
         >
           <img
@@ -103,7 +103,7 @@ const Lucrari = () => {
 
         <div
           className={
-            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+            "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row-reverse bg-dark bg-opacity-10"
           }
         >
           <img
@@ -111,7 +111,7 @@ const Lucrari = () => {
             alt="aerofotogrammetrie"
             className={"m-0 p-0 col-8 col-lg-6 p-1 p-lg-0"}
           />
-          <p className={"col-12 col-lg-6 mt-2 mt-lg-0"}>
+          <p className={"col-12 col-lg-6 m-0 p-0"}>
             &nbsp;&nbsp;<b>Aerofotogrammetria</b> (cunoscută și sub denumirea de fotogrammetrie aeriană) este știința care se ocupă cu determinarea în timp și spațiu a obiectelor fixe, mobile sau deformabile și cu reprezentarea lor fotografică, grafică sau numerică (prin coordonate) pe bază de fotografii speciale numite fotograme realizate din aer (cu ajutorul sateliților, avioanelor, drone, e.t.c.).
           </p>
         </div>

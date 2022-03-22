@@ -1,7 +1,4 @@
 .container {
-  padding: 0 3rem;
-  padding-bottom: 5rem;
-  width: min(100%, 62rem);
   .table {
     color: var(--color-dark);
     thead tr th {
@@ -38,9 +35,5 @@
     font-weight: 200;
     letter-spacing: 1px;
     text-align: justify;
-  }
-  @media screen and (max-width: 991px){
-    padding: 0 0;
-    padding-bottom: 1rem;
   }
 }

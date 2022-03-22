@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "../styles/sections.module.scss";
+import styles from "../styles/preturi.module.scss";
 
 const Preturi = () => {
   return (
-    <section id="preturi">
-      <div className={styles.container}>
+      <div className={styles.container + ""}>
         <h3 className={"text-center mb-4"}>Preturi</h3>
         <table className={styles.table + " table table-bordered table-light table-hover table-sm"}>
           <thead>
@@ -60,7 +59,6 @@ const Preturi = () => {
           </tbody>
         </table>
       </div>
-    </section>
   );
 };
 

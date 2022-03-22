@@ -1,17 +1,25 @@
 import React from "react";
-import styles from "../styles/sections.module.scss";
+import styles from "../styles/prezentare.module.scss";
 import Link from "next/link";
 
 const Prezentare = () => {
   return (
-    <section id="prezentare">
-      <div className={styles.container}>
-        <h3 className={"mb-4"}>Despre noi</h3>
-        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4"}>
-          <img className={"m-0 p-0 col-12 col-md-6"} src="/gps.jpg" alt="Prezentare" />
+    <div className={styles.prezentare}>
+      <div className={"row mx-auto bg-info"}>
+        <h3 className={""}>Despre noi</h3>
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row mb-4"
+          }
+        >
+          <img
+            className={"m-0 p-0 col-12 col-md-6"}
+            src="/gps.jpg"
+            alt="Prezentare"
+          />
           <p className="col-12 col-md-6 mt-3 mt-md-0">
-            &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul Constanta, cat si
-            in judetul Constanta.
+            &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul
+            Constanta, cat si in judetul Constanta.
           </p>
         </div>
         <h3>Ce va oferim:</h3>
@@ -43,7 +51,7 @@ const Prezentare = () => {
           lista de preturi
         </h6>
       </div>
-    </section>
+    </div>
   );
 };
 

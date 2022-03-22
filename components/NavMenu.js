@@ -16,10 +16,10 @@ const NavMenu = () => {
     <div
       className={
         styles.navMenu +
-        " row position-sticky sticky-top m-0 p-0 mt-lg-3 ms-lg-3 d-flex flex-lg-column justify-content-center align-items-start col-12 col-lg-auto ps-2 shadow order-1 order-lg-1"
+        " row position-sticky sticky-top m-0 p-0 d-flex justify-content-center align-items-start col-12 ps-2 shadow"
       }
     >
-      <Link href="#prezentare">
+      <Link href="/">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
@@ -27,15 +27,15 @@ const NavMenu = () => {
           Info
         </a>
       </Link>
-      <Link href="#cadastru">
+      <Link href="/lucrari">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Servicii
+          Lucrari
         </a>
       </Link>
-      <Link href="#preturi">
+      <Link href="/preturi">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
