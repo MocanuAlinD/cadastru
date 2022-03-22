@@ -7,9 +7,9 @@ const Prezentare = () => {
     <section id="prezentare">
       <div className={styles.container}>
         <h3 className={"mb-4"}>Despre noi</h3>
-        <div className={styles.imageContainer}>
-          <img className={styles.image} src="/gps.jpg" alt="Prezentare" />
-          <p className="clearfix">
+        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4"}>
+          <img className={"m-0 p-0 col-12 col-md-6"} src="/gps.jpg" alt="Prezentare" />
+          <p className="col-12 col-md-6">
             &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul Constanta, cat si
             in judetul Constanta.
           </p>

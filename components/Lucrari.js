@@ -6,26 +6,22 @@ const Lucrari = () => {
     <section id="cadastru">
       <div className={styles.container}>
         <h3 className={"mb-4"}>Tipuri de lucrari executate</h3>
-        <div
-          className={
-            styles.imageContainer + " border-start border-dark mb-5 ps-2"
-          }
-        >
-          <img src="/constantaWide.png" alt="tipuri de lucrari" />
-          <p className={"clearfix"}>
+        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"} >
+          <img
+            src="/constantaWide.png"
+            alt="tipuri de lucrari"
+            className={"m-0 p-0 col-12 col-md-6"}
+          />
+          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
             judetul Constanta dar ne putem deplasa si in judetele alaturate
             pentru anumite lucrari.
           </p>
         </div>
 
-        <div
-          className={
-            styles.imageContainer + " border-start border-dark mb-5 ps-2"
-          }
-        >
-          <img src="/img1.jpg" alt="img1" style={{ float: "right" }} />
-          <p className={"clearfix"}>
+        <div className={"row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"}>
+          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"} />
+          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
             obtinerea numarului cadastral si inscrierea corpurilor de
             proprietate in Cartea Funciara (apartamente, vile, spatii
@@ -33,13 +29,9 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div
-          className={
-            styles.imageContainer + " border-start border-dark mb-5 ps-2"
-          }
-        >
-          <img src="/img1.jpg" alt="img1" />
-          <p className={"clearfix"}>
+        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"}>
+          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"} />
+          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
             &nbsp;&nbsp;
             <b>
               Dezmembrari, alipiri, comasari, parcelari,intabulari constructii
@@ -50,13 +42,9 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div
-          className={
-            styles.imageContainer + " border-start border-dark mb-5 ps-2"
-          }
-        >
-          <img src="/img1.jpg" alt="img1" style={{ float: "right" }} />
-          <p className={"clearfix"}>
+        <div className={"row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"}>
+          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"}  />
+          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
             &nbsp;&nbsp;<b>Certificat energetic.</b> Un audit energetic al unei
             cladiri reprezintă o analiză ce are rolul de a identifica
             caracteristicile termice ale constructiei. <br />
@@ -68,13 +56,9 @@ const Lucrari = () => {
             mediu anual de energie.
           </p>
         </div>
-        <div
-          className={
-            styles.imageContainer + " border-start border-dark mb-5 ps-2"
-          }
-        >
-          <img src="/volume.png" alt="volume" />
-          <p className={"clearfix"}>
+        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"}>
+          <img src="/volume.png" alt="volume" className={"m-0 p-0 col-12 col-md-6"} />
+          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
             &nbsp;&nbsp;<b>Calcule volum</b> materiale sau zone excavate /
             exploatate.
           </p>
