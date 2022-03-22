@@ -6,22 +6,34 @@ const Lucrari = () => {
     <section id="cadastru">
       <div className={styles.container}>
         <h3 className={"mb-4"}>Tipuri de lucrari executate</h3>
-        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"} >
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+          }
+        >
           <img
             src="/constantaWide.png"
             alt="tipuri de lucrari"
-            className={"m-0 p-0 col-12 col-md-6"}
+            className={"m-0 p-0 col-12 col-lg-6"}
           />
-          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
+          <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Efectuam masuratori</b> in orasul Constanta si intreg
             judetul Constanta dar ne putem deplasa si in judetele alaturate
             pentru anumite lucrari.
           </p>
         </div>
 
-        <div className={"row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"}>
-          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"} />
-          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+          }
+        >
+          <img
+            src="/img1.jpg"
+            alt="img1"
+            className={"m-0 p-0 col-12 col-lg-6"}
+          />
+          <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Lucrari de cadastru si intabulare</b> pentru
             obtinerea numarului cadastral si inscrierea corpurilor de
             proprietate in Cartea Funciara (apartamente, vile, spatii
@@ -29,9 +41,17 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"}>
-          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"} />
-          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+          }
+        >
+          <img
+            src="/img1.jpg"
+            alt="img1"
+            className={"m-0 p-0 col-12 col-lg-6"}
+          />
+          <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;
             <b>
               Dezmembrari, alipiri, comasari, parcelari,intabulari constructii
@@ -42,23 +62,39 @@ const Lucrari = () => {
           </p>
         </div>
 
-        <div className={"row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"}>
-          <img src="/img1.jpg" alt="img1" className={"m-0 p-0 col-12 col-md-6"}  />
-          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row-reverse mb-4 bg-dark bg-opacity-10"
+          }
+        >
+          <img
+            src="/certificatEnergetic.jpeg"
+            alt="certificat energetic"
+            className={"m-0 p-0 col-12 col-lg-6"}
+          />
+          <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Certificat energetic.</b> Un audit energetic al unei
             cladiri reprezintă o analiză ce are rolul de a identifica
             caracteristicile termice ale constructiei. <br />
             &nbsp;&nbsp;Astfel pentru a putea vinde sau închiria o locuinta,
             proprietarul trebuie sa obtina un certificat energetic obligatoriu,
-            care atestă starea apartamentului sau casei sale din punctul de
+            care atesta starea apartamentului sau casei sale din punctul de
             vedere al consumului de energie. Acest certificat încadreaza
             locuinta într-o clasă energetica, ceea ce denotă un anumit consum
             mediu anual de energie.
           </p>
         </div>
-        <div className={"row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"}>
-          <img src="/volume.png" alt="volume" className={"m-0 p-0 col-12 col-md-6"} />
-          <p className={"col-12 col-md-6 mt-4 mt-md-0"}>
+        <div
+          className={
+            "row d-flex justify-content-center align-items-center flex-row mb-4 bg-dark bg-opacity-10"
+          }
+        >
+          <img
+            src="/volume.png"
+            alt="volume"
+            className={"m-0 p-0 col-12 col-lg-6"}
+          />
+          <p className={"col-12 col-lg-6 mt-4 mt-lg-0"}>
             &nbsp;&nbsp;<b>Calcule volum</b> materiale sau zone excavate /
             exploatate.
           </p>
