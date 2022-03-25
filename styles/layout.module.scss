@@ -1,3 +1,5 @@
+
+
 .layout {
   background: var(--color-cream);
   height: fit-content;
@@ -5,7 +7,7 @@
   font-family: Poppins, sans-serif;
   .children{
     background: var(--color-light);
-    border-radius: 1rem;
+    border-radius: .3rem;
   }
  
   .title {
@@ -21,7 +23,7 @@
     justify-content: center;
     padding: 1rem 0;
     h4 {
-      -webkit-text-stroke: 3px var(--color-blue-dark);
+      -webkit-text-stroke: 1px var(--color-blue-dark);
       color: var(--color-lightish);
       font-family: "Fugaz One", sans-serif;
       font-size: min(calc(100vw / 10), 4rem);

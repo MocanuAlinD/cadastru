@@ -24,7 +24,7 @@ const NavMenu = () => {
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Info
+          Acasa
         </a>
       </Link>
       <Link href="/lucrari">
@@ -32,7 +32,7 @@ const NavMenu = () => {
           className={"links m-0 p-0 mx-1 my-2 px-2"}
           onClick={(e) => changeActive(e)}
         >
-          Lucrari
+          Servicii
         </a>
       </Link>
       <Link href="/preturi">
