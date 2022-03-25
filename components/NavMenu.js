@@ -3,15 +3,6 @@ import React from "react";
 import styles from "../styles/navmenu.module.scss";
 
 const NavMenu = () => {
-  const changeActive = (e) => {
-    const all = document.querySelectorAll(".links");
-    all.forEach((element) => {
-      element.classList.remove("active");
-      element.style.background = "none";
-    });
-    e.target.classList.add("active");
-    e.target.style.background = "var(--color-blue)";
-  };
   return (
     <div
       className={
@@ -22,7 +13,6 @@ const NavMenu = () => {
       <Link href="/">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
         >
           Acasa
         </a>
@@ -30,7 +20,6 @@ const NavMenu = () => {
       <Link href="/lucrari">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
         >
           Servicii
         </a>
@@ -38,7 +27,6 @@ const NavMenu = () => {
       <Link href="/preturi">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
         >
           Preturi
         </a>
@@ -46,7 +34,6 @@ const NavMenu = () => {
       <Link href="/intrebari">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
         >
           Intrebari
         </a>
@@ -54,7 +41,6 @@ const NavMenu = () => {
       <Link href="#contact">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
-          onClick={(e) => changeActive(e)}
         >
           Contact
         </a>
