@@ -19,7 +19,7 @@ const NavMenu = () => {
           Acasa
         </a>
       </Link>
-      <Link href="/lucrari">
+      <Link href="/servicii">
         <a
           className={"links m-0 p-0 mx-1 my-2 px-2"}
         >

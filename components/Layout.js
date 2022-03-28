@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/layout.module.scss";
 import NavMenu from "./NavMenu";
-import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </div>
-      {/* <Contact /> */}
+      <Footer />
     </div>
   );
 };
