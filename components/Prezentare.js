@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/prezentare.module.scss";
-import Link from "next/link";
 
 const Prezentare = () => {
   return (

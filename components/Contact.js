@@ -9,7 +9,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div
-      className={styles.container + " row col-12 m-0 p-0 py-3 d-flex flex-column justify-content-center"}
+      className={styles.container + " row col-12 m-0 p-0 py-3 d-flex flex-column justify-content-center align-items-center"}
       id="contact"
     >
       <h4 className={styles.contactTitle + " text-center m-0 p-0 w-auto mx-auto px-5 py-1 mb-3 d-flex justify-content-center flex-column "}>
