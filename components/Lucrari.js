@@ -5,7 +5,7 @@ import PreturiLink from "./PreturiLink";
 const Lucrari = () => {
   return (
     <div className={styles.lucrari}>
-      <h3 className={"my-4 text-center"}>Ce servicii va putem oferi</h3>
+      <h3 className={"my-4 text-center"}>Ce servicii va oferim</h3>
       <div
         className={
           "row m-0 p-0 mb-4 d-flex justify-content-center align-items-center flex-row bg-dark bg-opacity-10"
