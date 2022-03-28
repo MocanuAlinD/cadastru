@@ -3,12 +3,14 @@ import React from "react";
 import styles from "../styles/navmenu.module.scss";
 
 const NavMenu = () => {
+
   return (
     <div
       className={
         styles.navMenu +
-        " row position-sticky sticky-top m-0 p-0 d-flex justify-content-center align-items-start col-12 ps-2 shadow"
+        " row position-sticky sticky-top m-0 p-0 mt-md-2 mx-md-auto d-flex justify-content-center align-items-start col-12 col-md-11  shadow"
       }
+      style={{top: '.5rem'}}
     >
       <Link href="/">
         <a
