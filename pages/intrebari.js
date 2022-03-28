@@ -109,7 +109,7 @@ const intrebari = () => {
           certificat energetic pentru o locuinta sunt necesare copii ale
           urmatoarelor documente din cadastru:
         </p>
-        <ul className={"m-0 p-0 ps-4"}>
+        <ul className={"m-0 p-0 ps-3"}>
           <li>Releveul apartamentului sau al casei (scara 1:100)</li>
           <li>Plan de incadrare in zona
           (scara 1:500)</li>

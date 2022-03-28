@@ -14,4 +14,13 @@
     p{
         letter-spacing: 1px;
     }
+    div{
+        background: var(--color-light3);
+        padding: .5rem;
+        margin: .5rem 0;
+    }
+    li{
+        list-style-position: outside;
+        padding-left: .5rem;
+    }
 }

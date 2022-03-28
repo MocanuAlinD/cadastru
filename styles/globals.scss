@@ -19,12 +19,12 @@ body {
   --color-lightish: #f7ede2;
   --color-light1: #ffffffbb;
   --color-light2: #ffffff33;
-  --color-light3:  #e9ecef;
-  --color-dark:  #343a40;
-  --color-dark1:  #adb5bd;
+  --color-light3: #e9ecef;
+  --color-dark: #343a40;
+  --color-dark1: #adb5bd;
   --color-orange: #e76f51;
-  --transition: all .35s ease-in-out;
-  --font-p: .9rem;
+  --transition: all 0.35s ease-in-out;
+  --font-p: 0.9rem;
   --font-h3: 1.3rem;
   --font-h4: 1.2rem;
   --font-h5: 1rem;
@@ -35,6 +35,9 @@ a {
   text-decoration: none;
 }
 
-li::marker{
+li::marker {
   color: var(--color-orange);
+  content: ">";
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
 }
