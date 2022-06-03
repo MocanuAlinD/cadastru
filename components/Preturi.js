@@ -1,20 +1,29 @@
 import React from "react";
 import styles from "../styles/preturi.module.scss";
+import Fade from "react-reveal/Fade";
 
 const Preturi = () => {
   return (
-      <div className={styles.container + " mx-auto"}>
-        <h3 className={"text-center mb-4"}>Preturi</h3>
-        <table className={styles.table + " table table-bordered table-light table-hover table-sm"}>
-          <thead>
+    <div className={styles.container + " mx-auto"}>
+      <h3 className={"text-center mb-4"}>Preturi</h3>
+      <table
+        className={
+          styles.table +
+          " table table-bordered table-light table-hover table-sm"
+        }
+      >
+        <thead>
+          <Fade top>
             <tr>
               {/* <th>#</th> */}
               <th>Serviciu</th>
               <th>Pret</th>
             </tr>
-          </thead>
-          <tbody>
-          <tr>
+          </Fade>
+        </thead>
+        <tbody>
+          <Fade bottom cascade>
+            <tr>
               {/* <th scope="row">-</th> */}
               <td>Consultanta</td>
               <td>GRATUIT</td>
@@ -37,9 +46,7 @@ const Preturi = () => {
             <tr>
               {/* <th scope="row">-</th> */}
               <td>Cadastru teren</td>
-              <td>
-                1000 lei + 350 lei/nivel constructie (releveu interior)
-              </td>
+              <td>1000 lei + 350 lei/nivel constructie (releveu interior)</td>
             </tr>
             <tr>
               {/* <th scope="row">-</th> */}
@@ -56,9 +63,10 @@ const Preturi = () => {
                 <sup>*</sup>Preturile NU INCLUD taxele OCPI.
               </td>
             </tr>
-          </tbody>
-        </table>
-      </div>
+          </Fade>
+        </tbody>
+      </table>
+    </div>
   );
 };
 

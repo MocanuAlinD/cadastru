@@ -4,14 +4,15 @@
     // min-width: 10rem;
     border-radius: .5rem;
     a{
+        border-radius: .2rem .2rem 0 0;
         color: var(--color-light);
-        text-decoration: none;
-        width: fit-content;
         font-family: Poppins, sans-serif;
         font-weight: 400;
         font-size: .8rem;
+        cursor: pointer;
+        text-decoration: none;
         transition: var(--transition);
-        border-radius: .2rem .2rem 0 0;
+        width: fit-content;
     }
     a:hover, a:focus, a:active{
         text-decoration: none;

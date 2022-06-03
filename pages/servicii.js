@@ -3,7 +3,7 @@ import Servicii from '../components/Servicii'
 
 const servicii = () => {
   return (
-    <Servicii />
+      <Servicii />
   );
 };
 
