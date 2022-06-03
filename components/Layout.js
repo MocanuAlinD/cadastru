@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <Fade top>
           <h4 className={styles.firstTitle}>Cadastru</h4>
         </Fade>
-        <Fade bottom delay={300}>
+        <Fade bottom   delay={300}>
           <h4 className={styles.secondTitle}>Constanta</h4>
         </Fade>
       </div>
