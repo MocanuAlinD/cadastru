@@ -13,10 +13,10 @@ const Prezentare = () => {
           "d-flex flex-column flex-md-row justify-content-center align-items-center"
         }
       >
-        <Fade left>
+        <Fade top>
           <img className={"col-12 col-md-6"} src="/gps.jpg" alt="Prezentare" />
         </Fade>
-        <Fade right delay={300}>
+        <Fade bottom delay={300}>
           <p className="col-12 col-md-6 px-2">
             &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul
             Constanta, cat si in judetul Constanta.
