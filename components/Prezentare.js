@@ -18,29 +18,29 @@ const Prezentare = () => {
         </Fade>
         <Fade bottom delay={300}>
           <p className="col-12 col-md-6 px-2">
-            &nbsp;&nbsp;Serviciile noastre va sunt oferite in Municipiul
-            Constanta, cat si in judetul Constanta.
+            &nbsp;&nbsp;Serviciile noastre vă sunt oferite în Municipiul
+            Constanța, cât și în județul Constanța.
           </p>
         </Fade>
       </div>
-      <h3 className="ps-2 fs-4">Ce va oferim:</h3>
+      <h3 className="ps-2 fs-4">Ce vă oferim:</h3>
       <ul className=" m-0 p-0 ms-4 px-1 mb-4">
-        <Fade left cascade opposite>
-          <li>Consultanta gratuita</li>
-          <li>Plan de situatie pentru CAEC primarie/gaz/enel</li>
-          <li>Trasare / tarusare teren intravilan</li>
-          <li>Trasare / tarusare teren extravilan</li>
+        <Fade left cascade>
+          <li>Consultanță gratuită</li>
+          <li>Plan de situație pentru CAEC primărie/gaz/enel</li>
+          <li>Trasare / țărușare teren intravilan</li>
+          <li>Trasare / țărușare teren extravilan</li>
           <li>
-            Trasari de santier (axe constructii, cota &quot;0&quot;) conform
+            Trasări de șantier (axe construcții, cota &quot;0&quot;) conform
             proiect
           </li>
-          <li>Aviz OCPI pentru autorizatii construire</li>
-          <li>Cadastru si intabulare terenuri</li>
-          <li>Cadastru si intabulare apartamente</li>
-          <li>Actualizari</li>
-          <li>Dezmembrari</li>
+          <li>Aviz OCPI pentru autorizații construire</li>
+          <li>Cadastru și intabulare terenuri</li>
+          <li>Cadastru și intabulare apartamente</li>
+          <li>Actualizări</li>
+          <li>Dezmembrări</li>
           <li>Alipiri</li>
-          <li>Apartamentari</li>
+          <li>Apartamentări</li>
           <li>Certificat energetic</li>
           <li>Aerofotogrammetrie</li>
           <li>Calcule volum materiale sau zone excavate/exploatate</li>
